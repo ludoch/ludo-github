@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+      <persistence-unit name="javaseJPAPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>javasejpa.Player</class>
+        <properties>
+          <property name="javax.persistence.jdbc.urla" value="jdbc:mysql://localhost:3306/petclinic?user=root&amp;password=root"/>
+          <property name="javax.persistence.jdbc.url" value="jdbc:google:rdbms://google.com:ludoengine:ludoengineinstance/petclinic"/>
+
+
+          <property name="javax.persistence.jdbc.password" value=""/>
+          <property name="javax.persistence.jdbc.driveraa" value="com.mysql.jdbc.Driver"/>
+          <property name="javax.persistence.jdbc.driver" value="com.google.appengine.api.rdbms.AppEngineDriver"/>
+
+          <property name="javax.persistence.jdbc.user" value="root"/>
+          <property name="eclipselink.ddl-generation" value="create-tables"/>
+
+    <!--property name="eclipselink.target-database" value="MYSQL4"/-->
+        </properties>
+      </persistence-unit>
+</persistence>
